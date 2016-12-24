@@ -18,6 +18,8 @@ Bluebird.config({
 (tslib as any).__awaiter = awaiter;
 ```
 
+Note that in order for the above to work you also need to compile your project with the `--importHelpers` flag and install the `tslib` module.
+
 Then async/await syntax can be used in conjunction with promise cancellations:
 
 ```typescript
