@@ -1,6 +1,6 @@
 var Bluebird = require("bluebird");
 
-exports = function (thisArg, _arguments, P, generator) {
+module.exports = function (thisArg, _arguments, P, generator) {
     // always use Bluebird:
     P = Bluebird;
 
