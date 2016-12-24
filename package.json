@@ -1,7 +1,7 @@
 {
   "name": "cancelable-awaiter",
   "version": "1.0.0",
-  "description": "A replacement for Typescript's default awaiter helper that supports Bluebird promise cancelations.",
+  "description": "A replacement for Typescript's default awaiter helper that supports Bluebird promise cancellations.",
   "main": "index.js",
   "repository": "https://github.com/itaysabato/cancelable-awaiter.git",
   "author": "itaysabato <itaysabato@gmail.com>",
