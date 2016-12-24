@@ -1,6 +1,4 @@
-declare namespace awaiter {}
-
-declare interface awaiter {
+declare var awaiter: {
     (thisArg: any, _arguments: any, P: Function, generator: Function): any;
 }
 
