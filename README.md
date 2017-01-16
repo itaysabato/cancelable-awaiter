@@ -25,15 +25,15 @@ Then async/await syntax can be used in conjunction with promise cancellations:
 ```typescript
 async function doSomeThings() {
     await doFirstThing()
-         // will be invoked anyway:
+        // will be invoked anyway:
         .finally(() => console.log("May have done first thing."));
-        
-    // may not execute this part if cancelled beforehand:
-    console.log("Done first thing!");
-    
-    // may also be cancelled after first thing is done:
+
+    // may not execute this part if cancelled beforehand:
+    console.log("Done first thing!");
+
+    // may also be cancelled after first thing is done:
     await doSecondThing();
-    console.log("Done second thing!");
+    console.log("Done second thing!");
 }
 
 const promise = doSomeThings()
